@@ -1,0 +1,36 @@
+/* You can add global styles to this file, and also import other style files */
+:root{
+  --blue-color: #2c3e50;
+  --green-color: #1abc9c;
+}
+
+body{
+  /* margin-top: 100px; */
+}
+
+img{
+  display: block;
+  width: 100%;
+}
+
+.starIconDiv{
+  position: relative;
+}
+
+.starIconDiv::before, .starIconDiv::after{
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 4px;
+  background-color: white;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.starIconDiv::before{
+  left: 42%;
+}
+
+.starIconDiv::after{
+  right: 42%;
+}

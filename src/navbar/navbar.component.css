@@ -1,0 +1,9 @@
+.navbar{
+  background-color: var(--blue-color);
+  padding-block: 24px;
+  transition: 0.5s padding-block;
+}
+
+.activeLink{
+  background-color: var(--green-color);
+}

@@ -1,0 +1,30 @@
+.starIconDiv::before, .starIconDiv::after{
+  background-color: var(--blue-color);
+}
+
+form label{
+  color: var(--green-color);
+  position: relative;
+  top: 42px;
+  z-index: -1;
+  transition: 0.3s top;
+}
+
+form input{
+  border: none;
+  border-bottom: 1px solid#dee2e6;
+  padding: 16px 10px;
+}
+
+form input:not(:last-of-type){
+  margin-bottom: 15px;
+}
+
+form input:focus{
+  box-shadow: none;
+}
+
+form button{
+  background-color: var(--green-color);
+  color: white;
+}

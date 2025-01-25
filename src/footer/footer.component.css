@@ -1,0 +1,21 @@
+footer{
+  background-color: var(--blue-color);
+  color: white;
+}
+
+.footerIcons span{
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.copyrights{
+  background-color: #1A252F;
+}
+
+.copyrights p{
+  color: #f0f8ff;
+}
