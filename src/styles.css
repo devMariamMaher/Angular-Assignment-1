@@ -34,3 +34,32 @@ img{
 .starIconDiv::after{
   right: 42%;
 }
+
+
+
+
+
+
+/* ================================================================= */
+/* media */
+
+@media (max-width: 768px){
+  .starIconDiv::before{
+    left: 55%;
+  }
+
+  .starIconDiv::after{
+    right: 55%;
+  }
+}
+
+
+@media (min-width: 769px) and (max-width: 1400px){
+  .starIconDiv::before{
+    left: 53%;
+  }
+
+  .starIconDiv::after{
+    right: 53%;
+  }
+}

@@ -4,6 +4,10 @@
   transition: 0.5s padding-block;
 }
 
+.nav-link{
+  width: fit-content;
+}
+
 .activeLink{
   background-color: var(--green-color);
 }

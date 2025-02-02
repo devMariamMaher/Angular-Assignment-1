@@ -19,14 +19,18 @@ export class NavbarComponent implements AfterViewInit{
     }
   }
 
-  constructor(private renderer: Renderer2){}
+  private _Renderer2 = inject(Renderer2);
 
-  private readonly _PLATFORM_ID = inject (PLATFORM_ID)
+  private readonly _PLATFORM_ID = inject(PLATFORM_ID);
 
-  ngAfterViewInit(): void {
+  @HostListener('window:resize') getHeight():void{
     if(isPlatformBrowser(this._PLATFORM_ID)){
       let navHeight = this.navbar.nativeElement.offsetHeight;
-      this.renderer.setStyle(document.body, 'margin-top', `${navHeight}px`);
+      this._Renderer2.setStyle(document.body, 'margin-top', `${navHeight}px`);
     }
+  }
+
+  ngAfterViewInit(): void {
+    this.getHeight();
   }
 }
